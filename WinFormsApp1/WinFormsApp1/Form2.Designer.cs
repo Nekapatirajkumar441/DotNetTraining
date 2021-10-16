@@ -34,6 +34,12 @@ namespace WinFormsApp1
             this.Rate = new System.Windows.Forms.Label();
             this.ratetxt = new System.Windows.Forms.TextBox();
             this.Calculateinterestbt = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pricetxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.inttxt = new System.Windows.Forms.TextBox();
+            this.amounttxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -73,17 +79,75 @@ namespace WinFormsApp1
             // 
             this.Calculateinterestbt.Location = new System.Drawing.Point(447, 232);
             this.Calculateinterestbt.Name = "Calculateinterestbt";
-            this.Calculateinterestbt.Size = new System.Drawing.Size(137, 29);
+            this.Calculateinterestbt.Size = new System.Drawing.Size(125, 29);
             this.Calculateinterestbt.TabIndex = 4;
             this.Calculateinterestbt.Text = "Calculate interest";
             this.Calculateinterestbt.UseVisualStyleBackColor = true;
             this.Calculateinterestbt.Click += new System.EventHandler(this.Calculateinterestbt_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(271, 204);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Price(months)";
+            // 
+            // pricetxt
+            // 
+            this.pricetxt.AcceptsReturn = true;
+            this.pricetxt.Location = new System.Drawing.Point(447, 197);
+            this.pricetxt.Name = "pricetxt";
+            this.pricetxt.Size = new System.Drawing.Size(125, 27);
+            this.pricetxt.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(271, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Interest";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(270, 355);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Amount";
+            // 
+            // inttxt
+            // 
+            this.inttxt.AcceptsReturn = true;
+            this.inttxt.Location = new System.Drawing.Point(447, 295);
+            this.inttxt.Name = "inttxt";
+            this.inttxt.Size = new System.Drawing.Size(125, 27);
+            this.inttxt.TabIndex = 9;
+            // 
+            // amounttxt
+            // 
+            this.amounttxt.AcceptsReturn = true;
+            this.amounttxt.Location = new System.Drawing.Point(447, 352);
+            this.amounttxt.Name = "amounttxt";
+            this.amounttxt.ReadOnly = true;
+            this.amounttxt.Size = new System.Drawing.Size(125, 27);
+            this.amounttxt.TabIndex = 10;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.amounttxt);
+            this.Controls.Add(this.inttxt);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pricetxt);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Calculateinterestbt);
             this.Controls.Add(this.ratetxt);
             this.Controls.Add(this.Rate);
@@ -91,6 +155,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +168,12 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label Rate;
         private System.Windows.Forms.TextBox ratetxt;
         private System.Windows.Forms.Button Calculateinterestbt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox pricetxt;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox inttxt;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox amounttxt;
     }
 }

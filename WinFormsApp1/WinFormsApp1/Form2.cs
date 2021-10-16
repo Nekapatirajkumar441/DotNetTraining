@@ -17,8 +17,27 @@ namespace WinFormsApp1
 
         private void Calculateinterestbt_Click(object sender, EventArgs e)
         {
-            var princiap = Double.Parse(principaltext.Text);
-            MessageBox.Show((princiap * ratetxt).ToString(), "we double sum");
+            if (string.IsNullOrEmpty(principaltext.Text) || string.IsNullOrWhiteSpace(ratetxt.Text) || string.IsNullOrWhiteSpace(pricetxt.Text))
+            {
+                MessageBox.Show("Please Enter Values");
+            }
+            else
+            {
+                var princiap = Double.Parse(principaltext.Text);
+                var rate = Double.Parse(ratetxt.Text);
+                var per = Double.Parse(pricetxt.Text);
+                // MessageBox.Show((princiap * rate * (per/1200)).ToString(), "we double sum");
+                var intrst = (princiap * rate * (per / 1200));
+                amounttxt.Text = intrst.ToString() + princiap;
+            }
+                
+        }
+
+      
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
