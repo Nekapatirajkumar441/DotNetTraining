@@ -105,6 +105,7 @@ namespace WinFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label3.Location = new System.Drawing.Point(271, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);

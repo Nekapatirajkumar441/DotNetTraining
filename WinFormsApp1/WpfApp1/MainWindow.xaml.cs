@@ -27,6 +27,7 @@ namespace WpfApp1
             this.Content = "hello Raj";
             this.Content = 3.124;
             this.Content = DateTime.Now;
+
             this.Content = new book()
             {
                 title = "The God",
